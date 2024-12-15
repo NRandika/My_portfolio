@@ -1,3 +1,6 @@
+/* Add Google Font for more attractive font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 /* General Styles */
 body {
     margin: 0;
@@ -92,18 +95,36 @@ a:hover {
     color: #ff9800;
 }
 
+/* Style for the Home button (your name) */
+.home-button {
+    color: white; /* White font color */
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px; /* Add padding for better button appearance */
+    background-color: #4CAF50; /* Green background */
+    border-radius: 5px; /* Optional: to add rounded corners */
+    margin-left: -10px; /* Shift the button a little to the left */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.home-button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
 
 
 /* Home Section */
 .home-section {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    padding: 100px 20px;
+    padding: 100px 20px 20px;
     min-height: 100vh;
     text-align: center;
     background-color: #121212;
+    gap: 20px; /* Add space between items */
 }
 
 .profile-card {
@@ -114,13 +135,19 @@ a:hover {
     max-width: 300px;
     margin: 20px;
     border: 2px solid #32cd32; /* Green border */
+    flex: 1;
 }
 
 .profile-card img {
     width: 100%;
+    max-width: 150px; /* Limit maximum size */
+    height: auto;
     border-radius: 50%;
     margin-bottom: 15px;
     border: 3px solid #ff9800;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .profile-card h1 {
@@ -139,24 +166,29 @@ a:hover {
     margin: 20px;
     padding: 20px;
     text-align: justify;
-    align-self: flex-start;
+    align-self: flex-start; /* Align to the top of the section */
+    flex: 2; /* Allow it to occupy more space than the profile card */
 }
 
 .summary h2 {
     font-size: 2rem;
     color: #ff9800;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .summary p {
     font-size: 1rem;
+    color: #B0B0B0;
 }
+
 
 /* About Me Section */
 .about-section {
-    padding: 80px 20px;
+    padding: 40px 20px;
     background-color: #121212;
     text-align: center;
+    margin-top: 0;
 }
 
 .about-section h2 {
@@ -167,6 +199,7 @@ a:hover {
     border-bottom: 2px solid #ff9800;
     display: inline-block;
     padding-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about-section p {
@@ -178,6 +211,45 @@ a:hover {
     padding: 0 20px;
     text-align: justify;
 }
+
+/* Heading Style (for h3 sections) */
+.about-section h3 {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #f0f0f0;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 0 20px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+/* Colors for different h3 sections */
+.about-section h3:nth-of-type(1) {
+    color: #1E90FF; /* 💼 Professional Journey */
+}
+
+.about-section h3:nth-of-type(2) {
+    color: #32CD32; /* 🔍 What I'm Working On */
+}
+
+.about-section h3:nth-of-type(3) {
+    color: #FFD700; /* 🎯 What Drives Me */
+}
+
+.about-section h3:nth-of-type(4) {
+    color: #FF6347; /* ⚽ Outside the Code */
+}
+
+.about-section h3:nth-of-type(5) {
+    color: #00BFFF; /* 🔗 Let's Connect! */
+}
+
+/* Strong Text Style */
+.about-section strong {
+    color: #d0eaf1; /* A vibrant cyan color that stands out against the black background */
+}
+
 
 /* Skills Section */
 .skills-section {
@@ -194,6 +266,7 @@ a:hover {
     border-bottom: 2px solid #ff9800;
     display: inline-block;
     padding-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .skills-container {
@@ -254,6 +327,7 @@ a:hover {
     border-bottom: 2px solid #ff9800;
     display: inline-block;
     padding-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Timeline Container */
@@ -341,6 +415,7 @@ a:hover {
     border-bottom: 2px solid #ff9800;
     display: inline-block;
     padding-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Education Container */
@@ -424,6 +499,7 @@ a:hover {
     font-size: 2rem;
     color: #ff9800;
     margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contact-details p {
